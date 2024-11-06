@@ -7,3 +7,9 @@
     <?php wp_head()?>
 </head>
     <body>
+        <header>
+            <img src="/pixaweb/wp-content/themes/pixawebtheme/assets/img/logo_pixaweb.svg"/>
+            <?php wp_nav_menu(['theme_location' => 'primary',
+                                'menu_class' => 'menu-principal',
+            ])?>
+        </header>

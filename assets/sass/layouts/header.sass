@@ -1,0 +1,44 @@
+@import "../../../../pixawebtheme/assets/sass/utils/variables"
+@import "../../../../pixawebtheme/assets/sass/utils/mixins"
+
+header
+  width: 450px
+  height: 100vh
+  background-color: $cPrinc2
+  padding: 20px
+  img
+    display: block
+    width: 250px
+    margin: 20px auto 70px auto
+  a
+    color: $cPrinc
+    font-size: 25px
+  .menu-principal
+    font-family: "PPTelegraf-Regular", sans-serif
+    .menu-item-has-children
+      height: 100%
+      margin-bottom: 40px
+      display: flex
+    .menu-item-has-children:before
+      content: ""
+      display: block
+      height: 50px
+      width: 50px
+      margin-right: 10px
+      background-size: contain
+      background-repeat: no-repeat
+      border-right: solid 5px $cSecond
+      padding-right: 10px
+    #menu-item-13:before
+      background-image: url("../icons/logo_type_site.png")
+    #menu-item-14:before
+      background-image: url("../icons/conception-graphique.png")
+    #menu-item-15:before
+      background-image: url("../icons/presence-en-ligne.png")
+    #menu-item-16:before
+      background-image: url("../icons/presentation-financiere.png")
+    .nav-link
+      width: 250px
+    .sub-menu
+      display: none
+

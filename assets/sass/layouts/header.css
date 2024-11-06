@@ -1,0 +1,54 @@
+header {
+  width: 450px;
+  height: 100vh;
+  background-color: rgba(28, 98, 151, 0.11);
+  padding: 20px;
+}
+header img {
+  display: block;
+  width: 250px;
+  margin: 20px auto 70px auto;
+}
+header a {
+  color: rgb(28, 98, 151);
+  font-size: 25px;
+}
+header .menu-principal {
+  font-family: "PPTelegraf-Regular", sans-serif;
+}
+header .menu-principal .menu-item-has-children {
+  height: 100%;
+  margin-bottom: 40px;
+  display: flex;
+}
+header .menu-principal .menu-item-has-children:before {
+  content: "";
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-right: solid 5px rgb(119, 221, 233);
+  padding-right: 10px;
+}
+header .menu-principal #menu-item-13:before {
+  background-image: url("../icons/logo_type_site.png");
+}
+header .menu-principal #menu-item-14:before {
+  background-image: url("../icons/conception-graphique.png");
+}
+header .menu-principal #menu-item-15:before {
+  background-image: url("../icons/presence-en-ligne.png");
+}
+header .menu-principal #menu-item-16:before {
+  background-image: url("../icons/presentation-financiere.png");
+}
+header .menu-principal .nav-link {
+  width: 250px;
+}
+header .menu-principal .sub-menu {
+  display: none;
+}
+
+/*# sourceMappingURL=header.css.map */
