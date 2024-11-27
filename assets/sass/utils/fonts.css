@@ -3,5 +3,15 @@
   src: url("../fonts/PPTelegraf-Regular.otf");
   font-weight: normal;
 }
+@font-face {
+  font-family: "PPTelegraf-UltraBold";
+  src: url("../fonts/PPTelegraf-UltraBold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Arial-regular";
+  src: url("../fonts/arial-regular.ttf");
+  font-weight: normal;
+}
 
 /*# sourceMappingURL=fonts.css.map */

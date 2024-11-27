@@ -23,6 +23,7 @@ function pixaweb_menu_link_attributes($attrs){
 
 
 
+
 add_action('after_setup_theme', 'pixaweb_theme_setup');
 add_action('wp_enqueue_scripts', 'theme_pixaweb_register_assets');
 add_action('after_setup_theme', 'theme_pixaweb_support');

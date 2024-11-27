@@ -2,10 +2,11 @@
 @import "../../../../pixawebtheme/assets/sass/utils/mixins"
 
 header
-  width: 450px
+  width: $widthMenu
   height: 100vh
   background-color: $cPrinc2
   padding: 20px
+  position: absolute
   img
     display: block
     width: 250px
@@ -41,4 +42,21 @@ header
       width: 250px
     .sub-menu
       display: none
+.txt-home
+  font-family: 'Arial'
+  padding-left: $widthMenu
+  height: 100vh
+  .section-content-home
+    margin: auto
+    .p-content
+      font-size: 24px
+      line-height: 35px
+      strong
+        color: $cPrinc
+.bloc-btn-header
+  position: absolute
+  right: 0
+  padding-top: 40px
+    
+
 

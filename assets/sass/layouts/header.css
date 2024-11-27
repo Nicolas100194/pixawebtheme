@@ -3,6 +3,7 @@ header {
   height: 100vh;
   background-color: rgba(28, 98, 151, 0.11);
   padding: 20px;
+  position: absolute;
 }
 header img {
   display: block;
@@ -49,6 +50,28 @@ header .menu-principal .nav-link {
 }
 header .menu-principal .sub-menu {
   display: none;
+}
+
+.txt-home {
+  font-family: "Arial";
+  padding-left: 450px;
+  height: 100vh;
+}
+.txt-home .section-content-home {
+  margin: auto;
+}
+.txt-home .section-content-home .p-content {
+  font-size: 24px;
+  line-height: 35px;
+}
+.txt-home .section-content-home .p-content strong {
+  color: rgb(28, 98, 151);
+}
+
+.bloc-btn-header {
+  position: absolute;
+  right: 0;
+  padding-top: 40px;
 }
 
 /*# sourceMappingURL=header.css.map */

@@ -1,0 +1,56 @@
+@import "../../../../pixawebtheme/assets/sass/utils/variables"
+@import "../../../../pixawebtheme/assets/sass/utils/mixins"
+
+
+.btn-princ
+  font-family: 'PPTelegraf-Regular'
+  a
+    padding: 25px 35px
+    display: flex
+    font-size: 23px
+    align-items: center
+    &:after
+      content: ''
+      display: inline-block
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
+      margin-left: 10px
+
+
+.btn-view-more
+  position: absolute
+  left: $widthMenu
+  bottom: 10%
+  transform: translateX(-50%)
+  a
+    background-color: $cPrinc
+    &:after
+      background-image: url("../icons/arrow-down.png")
+      width: 50px
+      height: 50px
+
+.btn-blog
+  font-family: 'PPTelegraf-UltraBold'
+  margin-right: 25px!important
+  a
+    background-color: $cSecond
+    color: $cPrinc
+    height: 100px
+    width: 200px
+    justify-content: center
+    &:after
+      margin-left: 0px
+
+.btn-contact
+  margin-right: 25px!important
+  a
+    background-color: $cPrinc
+    &:after
+      background-image: url("../icons/arrow-down.png")
+      width: 50px
+      height: 50px
+      rotate: 230deg
+
+
+

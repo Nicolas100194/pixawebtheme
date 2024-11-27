@@ -1,0 +1,62 @@
+.btn-princ {
+  font-family: "PPTelegraf-Regular";
+}
+.btn-princ a {
+  padding: 25px 35px;
+  display: flex;
+  font-size: 23px;
+  align-items: center;
+}
+.btn-princ a:after {
+  content: "";
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 10px;
+}
+
+.btn-view-more {
+  position: absolute;
+  left: 450px;
+  bottom: 10%;
+  transform: translateX(-50%);
+}
+.btn-view-more a {
+  background-color: rgb(28, 98, 151);
+}
+.btn-view-more a:after {
+  background-image: url("../icons/arrow-down.png");
+  width: 50px;
+  height: 50px;
+}
+
+.btn-blog {
+  font-family: "PPTelegraf-UltraBold";
+  margin-right: 25px !important;
+}
+.btn-blog a {
+  background-color: rgb(119, 221, 233);
+  color: rgb(28, 98, 151);
+  height: 100px;
+  width: 200px;
+  justify-content: center;
+}
+.btn-blog a:after {
+  margin-left: 0px;
+}
+
+.btn-contact {
+  margin-right: 25px !important;
+}
+.btn-contact a {
+  background-color: rgb(28, 98, 151);
+}
+.btn-contact a:after {
+  background-image: url("../icons/arrow-down.png");
+  width: 50px;
+  height: 50px;
+  rotate: 230deg;
+}
+
+/*# sourceMappingURL=buttons.css.map */
