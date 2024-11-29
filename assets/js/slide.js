@@ -11,7 +11,7 @@ btnNext[0].addEventListener("click", (e) => {
         newsSlideCurrent.classList.remove("slide-hidden");
     } else if (SlideCurrent[0].nextElementSibling === null){
         SlideCurrent[0].classList.add("slide-hidden");
-        SlideCurrent[0] = SlideCurrent[0].previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling;
+        SlideCurrent[0] = SlideCurrent[0].previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling;
         SlideCurrent[0].classList.remove("slide-hidden");
     }
 

@@ -7,6 +7,14 @@
   scroll-behavior: smooth;
 }
 
+p {
+  line-height: 25px;
+}
+
+p, a {
+  font-family: "Arial";
+}
+
 @font-face {
   font-family: "PPTelegraf-Regular";
   src: url("../fonts/PPTelegraf-Regular.otf");
@@ -41,6 +49,37 @@
 
 .title-type-website {
   background-color: rgb(241, 241, 241);
+}
+
+.title-h3 {
+  font-size: 28px;
+}
+
+.title-type-site {
+  margin-bottom: 20px !important;
+}
+
+.title-type-eshop, .title-type-showcase {
+  display: flex;
+  align-items: center;
+}
+.title-type-eshop:before, .title-type-showcase:before {
+  content: "";
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  margin-right: 20px;
+}
+
+.title-type-showcase:before {
+  background-image: url("../icons/site-vitrine.png");
+}
+
+.title-type-eshop:before {
+  background-image: url("../icons/site-e-commerce.png");
 }
 
 .btn-princ {
@@ -117,6 +156,28 @@
   background-image: url("../icons/arrow-next-slide.png");
   width: 50px;
   height: 50px;
+}
+
+.btn-section-type-site {
+  position: absolute;
+  bottom: -25px;
+  right: -75px;
+  height: 50px;
+}
+.btn-section-type-site a {
+  background-color: rgb(28, 98, 151);
+  display: flex;
+}
+.btn-section-type-site a:after {
+  content: "";
+  background-image: url("../icons/arrow-right.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
 }
 
 header {
@@ -230,6 +291,27 @@ header .menu-principal .sub-menu {
 
 .section-types-sites {
   background-color: rgb(241, 241, 241);
+  padding: 50px 0 100px 0;
+}
+.section-types-sites .bloc-container {
+  max-width: 1250px;
+  margin: auto;
+  justify-content: space-between;
+}
+.section-types-sites .bloc-container .bloc-type-site {
+  background-color: rgb(255, 255, 255);
+  width: 45%;
+  padding: 50px;
+  height: 350px;
+  position: relative;
+}
+
+.section-swiper {
+  max-width: 1250px;
+  margin: auto;
+}
+.section-swiper .swiper-wrapper {
+  display: flex;
 }
 
 /*# sourceMappingURL=main.css.map */

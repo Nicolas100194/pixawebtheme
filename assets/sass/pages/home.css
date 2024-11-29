@@ -33,6 +33,24 @@
 
 .section-types-sites {
   background-color: rgb(241, 241, 241);
+  padding: 50px 0 100px 0;
+}
+.section-types-sites .bloc-container {
+  max-width: 1250px;
+  margin: auto;
+  justify-content: space-between;
+}
+.section-types-sites .bloc-container .bloc-type-site {
+  background-color: rgb(255, 255, 255);
+  width: 45%;
+  padding: 50px;
+  height: 350px;
+  position: relative;
+}
+
+.section-swiper {
+  max-width: 1250px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=home.css.map */

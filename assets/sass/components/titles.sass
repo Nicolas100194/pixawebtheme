@@ -19,3 +19,30 @@
   background-color: $cGray
 
 .title-h3
+  font-size: 28px
+
+.title-type-site
+  margin-bottom: 20px!important
+
+.title-type-eshop, .title-type-showcase
+  display: flex
+  align-items: center
+  &:before
+    content: ''
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    display: inline-block
+    height: 70px
+    width: 70px
+    margin-right: 20px
+
+.title-type-showcase
+  &:before
+    background-image: url("../icons/site-vitrine.png")
+.title-type-eshop
+  &:before
+    background-image: url("../icons/site-e-commerce.png")
+
+
+

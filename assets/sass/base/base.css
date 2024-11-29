@@ -7,4 +7,12 @@
   scroll-behavior: smooth;
 }
 
+p {
+  line-height: 25px;
+}
+
+p, a {
+  font-family: "Arial";
+}
+
 /*# sourceMappingURL=base.css.map */

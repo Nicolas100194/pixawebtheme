@@ -74,4 +74,26 @@
   height: 50px;
 }
 
+.btn-section-type-site {
+  position: absolute;
+  bottom: -25px;
+  right: -75px;
+  height: 50px;
+}
+.btn-section-type-site a {
+  background-color: rgb(28, 98, 151);
+  display: flex;
+}
+.btn-section-type-site a:after {
+  content: "";
+  background-image: url("../icons/arrow-right.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
 /*# sourceMappingURL=buttons.css.map */
