@@ -59,4 +59,19 @@
   rotate: 230deg;
 }
 
+.btn-next {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.btn-next a {
+  background-color: rgb(255, 255, 255);
+  color: rgb(28, 98, 151);
+}
+.btn-next a:after {
+  background-image: url("../icons/arrow-next-slide.png");
+  width: 50px;
+  height: 50px;
+}
+
 /*# sourceMappingURL=buttons.css.map */

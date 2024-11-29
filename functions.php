@@ -2,6 +2,8 @@
 
 function theme_pixaweb_register_assets() {
     wp_enqueue_style('themepixaweb', get_stylesheet_directory_uri().'/assets/sass/main.css');
+
+    wp_enqueue_script('slide', get_stylesheet_directory_uri().'/assets/js/slide.js', array(), null, true);
 }
 
 function theme_pixaweb_support(){

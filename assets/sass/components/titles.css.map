@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["titles.sass","../utils/variables.sass"],"names":[],"mappings":"AAGA;EACE,OCHO;EDIP;EACA;EACA;EACA","file":"titles.css"}
+{"version":3,"sourceRoot":"","sources":["titles.sass","../utils/variables.sass"],"names":[],"mappings":"AAGA;EACE;EACA,OCJO;;;ADMT;EACE;EACA;EACA;;;AAEF;EACE;EACA;EACA;;;AAEF;EACE,kBCbM","file":"titles.css"}

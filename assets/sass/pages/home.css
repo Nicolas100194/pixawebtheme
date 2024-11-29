@@ -1,0 +1,38 @@
+.section-slide {
+  background-color: rgb(28, 98, 151);
+  justify-content: space-around;
+  padding: 150px 0;
+  position: relative;
+}
+.section-slide .content-row {
+  max-width: 1200px;
+}
+.section-slide .content-row .img-slide {
+  max-width: 750px;
+  padding-right: 50px;
+}
+.section-slide .content-row .slide-hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.section-slide .content-row .info-slide {
+  padding-left: 50px;
+}
+.section-slide .content-row .info-slide .title-slide {
+  font-family: "PPTelegraf-UltraBold";
+  font-size: 35px;
+}
+.section-slide .content-row .info-slide .title-slide, .section-slide .content-row .info-slide .txt-slide {
+  color: rgb(255, 255, 255);
+}
+.section-slide .content-row .info-slide .txt-slide {
+  font-family: "ARIAL";
+  max-width: 500px;
+}
+
+.section-types-sites {
+  background-color: rgb(241, 241, 241);
+}
+
+/*# sourceMappingURL=home.css.map */
