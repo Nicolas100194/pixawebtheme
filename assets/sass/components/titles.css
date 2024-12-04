@@ -1,6 +1,12 @@
-.title-home-h1, .title-h2, .title-h3 {
+.title-home-h1, .title-h2, .title-h3, .title-h2-design-website, .title-h2-online-website {
   font-family: PPTelegraf-UltraBold;
   color: rgb(28, 98, 151);
+}
+
+.title-h3-subtitle {
+  font-family: PPTelegraf-Regular;
+  color: rgb(28, 98, 151);
+  font-size: 25px;
 }
 
 .title-home-h1 {
@@ -15,7 +21,7 @@
   padding: 50px;
 }
 
-.title-type-website {
+.title-type-website, .title-management {
   background-color: rgb(241, 241, 241);
 }
 
@@ -48,6 +54,14 @@
 
 .title-type-eshop:before {
   background-image: url("../icons/site-e-commerce.png");
+}
+
+.title-web-projects {
+  padding-bottom: 150px;
+}
+
+.title-h2-design-website, .title-h2-online-website {
+  font-size: 35px;
 }
 
 /*# sourceMappingURL=titles.css.map */

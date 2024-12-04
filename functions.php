@@ -36,26 +36,16 @@ function pixaweb_projets(){
 
 
 function pixaweb_projets_images_shortcode($atts) {
-    // Récupère les attributs (facultatif, pour personnaliser si nécessaire)
-    $atts = shortcode_atts(
-        [
-            'posts_per_page' => 10, // Nombre de projets à afficher
-            'size' => 'medium',    // Taille des images (thumbnail, medium, large, full)
-        ],
-        $atts,
-        'projets_images'
-    );
 
     // Requête pour récupérer les projets
     $args = [
         'post_type' => 'projets',
-        'posts_per_page' => (int) $atts['posts_per_page'],
     ];
 
     $query = new WP_Query($args);
 
     // Contenu du shortcode
-    $output = '<div class="swiper"><div class="swiper-wrapper">';
+    $output = '';
 
     if ($query->have_posts()) {
         while ($query->have_posts()) {
@@ -63,7 +53,7 @@ function pixaweb_projets_images_shortcode($atts) {
 
             // Vérifie et récupère l'image mise en avant
             if (has_post_thumbnail()) {
-                $output .= '<div class="swiper-slide">'.get_the_post_thumbnail(get_the_ID(), $atts['size']).'</div>';
+                $output .= '<div class="slide"><img class="img-slide" src="' . esc_url(get_the_post_thumbnail_url()) . '" alt="Image"></div>';
             } else {
                 // Image par défaut si aucune image mise en avant
                 $output .= '<img src="' . esc_url(get_template_directory_uri() . '/images/default-thumbnail.jpg') . '" alt="Image par défaut">';
@@ -74,7 +64,7 @@ function pixaweb_projets_images_shortcode($atts) {
         $output .= '<p>Aucun projet trouvé.</p>';
     }
 
-    $output .= '</div></div>';
+
 
     return $output;
 }
