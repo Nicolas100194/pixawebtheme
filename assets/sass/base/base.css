@@ -11,7 +11,7 @@ p {
   line-height: 25px;
 }
 
-p, a {
+p, a, ul {
   font-family: "Arial";
 }
 

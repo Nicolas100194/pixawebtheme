@@ -16,7 +16,9 @@ function theme_pixaweb_support(){
 function pixaweb_theme_setup() {
     register_nav_menus(array(
         'primary' => __('Menu Principal', 'pixaweb'),
+        //'footer' => __('Menu Footer', 'pixaweb')
     ));
+
 }
 
 function pixaweb_menu_link_attributes($attrs){
@@ -45,7 +47,7 @@ function pixaweb_projets_images_shortcode($atts) {
     $query = new WP_Query($args);
 
     // Contenu du shortcode
-    $output = '';
+    $output = '<div class="swiper mySwiper"><div class="swiper-wrapper">';
 
     if ($query->have_posts()) {
         while ($query->have_posts()) {
@@ -53,7 +55,7 @@ function pixaweb_projets_images_shortcode($atts) {
 
             // Vérifie et récupère l'image mise en avant
             if (has_post_thumbnail()) {
-                $output .= '<div class="slide"><img class="img-slide" src="' . esc_url(get_the_post_thumbnail_url()) . '" alt="Image"></div>';
+                $output .= '<img class=" swiper-slide img-slide" src="' . esc_url(get_the_post_thumbnail_url()) . '" alt="Image">';
             } else {
                 // Image par défaut si aucune image mise en avant
                 $output .= '<img src="' . esc_url(get_template_directory_uri() . '/images/default-thumbnail.jpg') . '" alt="Image par défaut">';
@@ -64,7 +66,7 @@ function pixaweb_projets_images_shortcode($atts) {
         $output .= '<p>Aucun projet trouvé.</p>';
     }
 
-
+    $output .= '</div></div>';
 
     return $output;
 }

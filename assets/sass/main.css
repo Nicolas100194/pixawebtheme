@@ -11,7 +11,7 @@ p {
   line-height: 25px;
 }
 
-p, a {
+p, a, ul {
   font-family: "Arial";
 }
 
@@ -89,7 +89,7 @@ p, a {
 }
 
 .title-web-projects {
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 .title-h2-design-website, .title-h2-online-website {
@@ -278,6 +278,39 @@ header .menu-principal .sub-menu {
   padding-top: 40px;
 }
 
+footer {
+  background-color: rgb(28, 98, 151);
+  padding: 50px;
+}
+footer .icon-footer-pixaweb {
+  width: 125px;
+  height: auto;
+}
+footer hr {
+  margin-top: 25px !important;
+  height: 1px;
+  background-color: rgb(112, 112, 112);
+  width: 100%;
+  border-top: none !important;
+}
+footer .title-bloc-footer, footer .bloc-menu-footer {
+  color: rgb(255, 255, 255);
+}
+footer .title-bloc-footer {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 25px 0;
+}
+footer .bloc-menu-footer {
+  align-items: baseline;
+}
+footer .bloc-menu-footer .col-menu-footer {
+  margin-right: 25px;
+}
+footer .bloc-menu-footer .col-menu-footer p {
+  font-weight: 600;
+}
+
 .section-slide {
   background-color: rgb(28, 98, 151);
   justify-content: space-around;
@@ -328,21 +361,14 @@ header .menu-principal .sub-menu {
   position: relative;
 }
 
-.section-slide-projects .wp-block-group__inner-container {
+.mySwiper {
+  overflow: hidden;
+  margin: auto;
+  width: 750px;
+  padding-bottom: 100px;
+}
+.mySwiper .swiper-wrapper {
   display: flex;
-  max-width: 90vw;
-  margin: auto;
-  justify-content: center;
-  padding-bottom: 150px;
-}
-.section-slide-projects .wp-block-group__inner-container .slide {
-  width: 550px;
-}
-.section-slide-projects .wp-block-group__inner-container .slide img {
-  width: 500px;
-  display: block;
-  margin: auto;
-  height: auto;
 }
 
 .section-design-website {
@@ -364,6 +390,7 @@ header .menu-principal .sub-menu {
 
 .section-management {
   background-color: rgb(241, 241, 241);
+  padding: 50px 0 100px 0;
 }
 .section-management .section-management-website {
   margin: auto;
